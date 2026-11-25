@@ -84,6 +84,11 @@ h2.section{font-size:20px;margin:28px 0 4px;text-align:center}
 .alt summary{font-size:15px;color:var(--gold)}
 .alt .how{background:rgba(0,0,0,.2)}
 .alt-go{background:#334155;font-size:15px;padding:12px;margin-bottom:14px}
+.back{display:flex;gap:12px;align-items:flex-start;background:linear-gradient(180deg,rgba(139,92,246,.22),rgba(139,92,246,.1));
+  border:1.5px solid rgba(167,139,250,.7);border-radius:18px;padding:14px 16px;margin:18px 0 0;font-size:15.5px}
+.back-icon{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--violet);display:grid;place-items:center;font-size:20px;font-weight:800}
+.shot-real{width:100%;max-width:330px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.4);border:3px solid #2A2446}
+.demo figure:has(.shot-real){flex-basis:330px}
 .illus{font-size:12px;color:var(--mute);text-align:center;margin:0 0 12px}
 .s1{--accent:#8B5CF6}
 .s2{--accent:#3B82F6}
@@ -133,6 +138,12 @@ footer a{color:var(--mute)}
     <figure class="shot"><img src="img/home.webp" alt="الدراسة في المنزل" loading="lazy"><figcaption>مكتبك في المنزل</figcaption></figure>
   </section>
 
+  <section class="back">
+    <div class="back-icon" aria-hidden="true">↩</div>
+    <div><b>مهم قبل كل شيء:</b> كل خطوة تفتح صفحة من Google. <b>بعد أن تنهيها ارجع إلى هذه الصفحة</b> (زر الرجوع في هاتفك)
+    وأكمل الخطوة التي بعدها.</div>
+  </section>
+
   <section class="before">
     <h2>قبل أن تبدأ</h2>
     <ul>
@@ -143,7 +154,7 @@ footer a{color:var(--mute)}
   </section>
 
   <h2 class="section">الخطوات بالترتيب</h2>
-  <p class="sub">بعد كل خطوة ارجع إلى هذه الصفحة وتابع التي بعدها</p>
+  <p class="sub">انتهيت من خطوة؟ ارجع إلى هنا وتابع التي بعدها ↩</p>
   <p class="illus">الرسوم تقريبية لتعرف أين تضغط — قد يختلف شكل الصفحة قليلاً حسب هاتفك ولغته.</p>
 
   <article class="step s1" id="step1">
@@ -192,9 +203,10 @@ footer a{color:var(--mute)}
     <div class="head"><div class="num">2</div><h3>صِر مختبِراً</h3></div>
     <p class="why"><b>ماذا تفعل؟</b> تسجّلك رسمياً في اختبار التطبيق، فتُحسب واحداً من المختبِرين.</p>
     <ol class="how">
-      <li>اضغط الزر في الأسفل <span class="btn-ar">(صِر مختبِراً)</span> — تفتح صفحة Google Play للاختبار.</li>
-      <li>اضغط <span class="btn-en">Become a tester</span> (أصبح مختبِراً).</li>
-      <li>تظهر عبارة <span class="btn-en">You are now a tester</span> — تمّت الخطوة.</li>
+      <li>اضغط الزر في الأسفل <span class="btn-ar">(صِر مختبِراً)</span> — تفتح صفحة Google Play للاختبار، وهي <b>بالإنجليزية دائماً</b>.</li>
+      <li>اضغط الزر <span class="btn-en">Become a tester</span> (معناه: أصبح مختبِراً).</li>
+      <li>تتغير الصفحة وتظهر فيها فقرات بالإنجليزية، وفي إحداها رابط أزرق <span class="btn-en">download it on Google Play</span> —
+      <b>اضغطه فينقلك مباشرة لتنزيل التطبيق</b>، ولا تحتاج أن ترجع إلى هنا للخطوة 3.</li>
     </ol>
     <!--guide:2-->
     <div class="demo">
@@ -202,29 +214,27 @@ footer a{color:var(--mute)}
 <defs><marker id="h" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#EF4444"/></marker></defs>
 <rect x="3" y="3" width="194" height="354" rx="26" fill="#fff" stroke="#2A2446" stroke-width="5"/>
 <rect x="70" y="10" width="60" height="6" rx="3" fill="#2A2446"/>
-<path d="M20,28 L20,44 L33,36 z" fill="#01875F"/><text x="38" y="40" font-size="10" fill="#5f6368" font-weight="600" text-anchor="start">Google Play</text><line x1="8" y1="52" x2="192" y2="52" stroke="#e8eaed"/><image href="img/icon.webp" x="132" y="66" width="46" height="46" preserveAspectRatio="xMidYMid slice"/><text x="124" y="86" font-size="12" fill="#202124" font-weight="700" text-anchor="end">قرية الدراسة</text><rect x="60" y="96" width="64" height="5" rx="2.5" fill="#e8eaed"/><text x="100" y="138" font-size="10.5" fill="#202124" font-weight="700" text-anchor="middle">انضم إلى برنامج الاختبار</text><rect x="30" y="150" width="140" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="161" width="112" height="5" rx="2.5" fill="#e8eaed"/><rect x="30" y="172" width="140" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="183" width="112" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="208" width="112" height="28" rx="8" fill="#01875F"/><text x="100" y="226" font-size="10" fill="#fff" font-weight="700" text-anchor="middle">أصبح مختبِرًا</text>
+<path d="M20,28 L20,44 L33,36 z" fill="#01875F"/><text x="38" y="40" font-size="10" fill="#5f6368" font-weight="600" text-anchor="start">Google Play</text><line x1="8" y1="52" x2="192" y2="52" stroke="#e8eaed"/><image href="img/icon.webp" x="132" y="66" width="46" height="46" preserveAspectRatio="xMidYMid slice"/><text x="124" y="86" font-size="12" fill="#202124" font-weight="700" text-anchor="end">قرية الدراسة</text><rect x="60" y="96" width="64" height="5" rx="2.5" fill="#e8eaed"/><text x="100" y="138" font-size="10.5" fill="#202124" font-weight="700" text-anchor="middle">Testing program</text><rect x="30" y="150" width="140" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="161" width="112" height="5" rx="2.5" fill="#e8eaed"/><rect x="30" y="172" width="140" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="183" width="112" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="208" width="112" height="28" rx="8" fill="#01875F"/><text x="100" y="226" font-size="10" fill="#fff" font-weight="700" text-anchor="middle">Become a tester</text>
 <ellipse cx="100" cy="222" rx="66" ry="22" fill="none" stroke="#EF4444" stroke-width="3.5"/>
 <path d="M60,310 Q42.2,280.0 60,250" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round" marker-end="url(#h)"/>
 <circle cx="60" cy="310" r="4" fill="#EF4444"/>
-</svg><figcaption>اضغط «أصبح مختبِرًا»</figcaption></figure>
-      <figure><svg viewBox="0 0 200 360" role="img" xmlns="http://www.w3.org/2000/svg" direction="ltr" style="direction:ltr">
-<defs><marker id="h" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#EF4444"/></marker></defs>
-<rect x="3" y="3" width="194" height="354" rx="26" fill="#fff" stroke="#2A2446" stroke-width="5"/>
-<rect x="70" y="10" width="60" height="6" rx="3" fill="#2A2446"/>
-<path d="M20,28 L20,44 L33,36 z" fill="#01875F"/><text x="38" y="40" font-size="10" fill="#5f6368" font-weight="600" text-anchor="start">Google Play</text><line x1="8" y1="52" x2="192" y2="52" stroke="#e8eaed"/><image href="img/icon.webp" x="132" y="66" width="46" height="46" preserveAspectRatio="xMidYMid slice"/><text x="124" y="86" font-size="12" fill="#202124" font-weight="700" text-anchor="end">قرية الدراسة</text><rect x="60" y="96" width="64" height="5" rx="2.5" fill="#e8eaed"/><circle cx="100" cy="160" r="26" fill="#E6F4EA"/><path d="M88,160 l8,8 l16,-17" fill="none" stroke="#01875F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="100" y="208" font-size="12" fill="#202124" font-weight="700" text-anchor="middle">أنت الآن مختبِر</text><text x="100" y="228" font-size="8.5" fill="#5f6368" font-weight="400" text-anchor="middle">You are now a tester</text>
-<ellipse cx="100" cy="212" rx="62" ry="16" fill="none" stroke="#EF4444" stroke-width="3.5"/>
-<path d="M40,290 Q33.3,262.0 63,234" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round" marker-end="url(#h)"/>
-<circle cx="40" cy="290" r="4" fill="#EF4444"/>
-</svg><figcaption>تظهر «أنت الآن مختبِر» — تمّت</figcaption></figure>
+</svg><figcaption>اضغط الزر الإنجليزي <b>Become a tester</b></figcaption></figure>
     </div>
     <!--/guide:2-->
+    <!--guide:2b-->
+    <div class="demo">
+      <figure><img src="img/tester-done.webp" alt="بعد Become a tester: رابط download it on Google Play" class="shot-real" loading="lazy"><figcaption>تظهر هذه الصفحة: اضغط الرابط الأزرق <b>download it on Google Play</b> — ينقلك مباشرة لتنزيل التطبيق</figcaption></figure>
+    </div>
+    <!--/guide:2b-->
+    <!--after:2b-->
     <a class="go" data-step="2" href="https://play.google.com/apps/testing/com.mimistudy.app" target="_blank" rel="noopener">صِر مختبِراً <span class="arrow">←</span></a>
     <p class="note">إن قالت الصفحة إنك لست مسموحاً لك: تأكد أنك أكملت الخطوة 1 بنفس الحساب.</p>
   </article>
 
   <article class="step s3" id="step3">
     <div class="head"><div class="num">3</div><h3>نزّل التطبيق</h3></div>
-    <p class="why"><b>ماذا تفعل؟</b> تفتح صفحة التطبيق في Google Play لتثبّته كأي تطبيق.</p>
+    <p class="why"><b>إن ضغطت الرابط الأزرق في الخطوة 2</b> فأنت الآن في صفحة التطبيق: اضغط «تثبيت» فقط. وإن لم تضغطه، فهذا
+    الزر يفتح صفحة التطبيق في Google Play.</p>
     <ol class="how">
       <li>اضغط الزر في الأسفل <span class="btn-ar">(نزّل من Google Play)</span>.</li>
       <li>اضغط <span class="btn-en">Install</span> (تثبيت)، ثم افتح التطبيق.</li>
