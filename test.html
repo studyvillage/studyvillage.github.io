@@ -89,6 +89,7 @@ h2.section{font-size:20px;margin:28px 0 4px;text-align:center}
 .back-icon{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--violet);display:grid;place-items:center;font-size:20px;font-weight:800}
 .shot-real{width:100%;max-width:330px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.4);border:3px solid #2A2446}
 .demo figure:has(.shot-real){flex-basis:330px}
+.how li.warn{color:#FCA5A5}
 .illus{font-size:12px;color:var(--mute);text-align:center;margin:0 0 12px}
 .s1{--accent:#8B5CF6}
 .s2{--accent:#3B82F6}
@@ -205,8 +206,10 @@ footer a{color:var(--mute)}
     <ol class="how">
       <li>اضغط الزر في الأسفل <span class="btn-ar">(صِر مختبِراً)</span> — تفتح صفحة Google Play للاختبار، وهي <b>بالإنجليزية دائماً</b>.</li>
       <li>اضغط الزر <span class="btn-en">Become a tester</span> (معناه: أصبح مختبِراً).</li>
-      <li>تتغير الصفحة وتظهر فيها فقرات بالإنجليزية، وفي إحداها رابط أزرق <span class="btn-en">download it on Google Play</span> —
-      <b>اضغطه فينقلك مباشرة لتنزيل التطبيق</b>، ولا تحتاج أن ترجع إلى هنا للخطوة 3.</li>
+      <li>تتغير الصفحة. <b>انزل إلى أسفلها</b>: فيها قائمة 1، 2، 3. اضغط <b>الرابط الأزرق في النقطة 3 فقط</b>
+      <span class="btn-en">Install the public version on Google Play</span> — ينقلك مباشرة لتنزيل التطبيق، ولا تحتاج أن ترجع إلى هنا للخطوة 3.</li>
+      <li class="warn"><b>تنبيه:</b> النقطتان 1 و2 في تلك القائمة لمن يريد <b>مغادرة</b> الاختبار — لا تعمل بهما، <b>ولا تضغط زر
+      <span class="btn-en">Leave the program</span></b>، وإلا خرجت من المختبِرين.</li>
     </ol>
     <!--guide:2-->
     <div class="demo">
@@ -223,7 +226,7 @@ footer a{color:var(--mute)}
     <!--/guide:2-->
     <!--guide:2b-->
     <div class="demo">
-      <figure><img src="img/tester-done.webp" alt="بعد Become a tester: رابط download it on Google Play" class="shot-real" loading="lazy"><figcaption>تظهر هذه الصفحة: اضغط الرابط الأزرق <b>download it on Google Play</b> — ينقلك مباشرة لتنزيل التطبيق</figcaption></figure>
+      <figure><img src="img/tester-done-2.webp" alt="بعد Become a tester: الرابط الأزرق في النقطة 3، ولا تضغط Leave the program" class="shot-real" loading="lazy"><figcaption>انزل إلى أسفل الصفحة واضغط الرابط الأزرق في النقطة 3 — <b>ولا تضغط أبداً Leave the program</b> (يخرجك من الاختبار)</figcaption></figure>
     </div>
     <!--/guide:2b-->
     <!--after:2b-->
