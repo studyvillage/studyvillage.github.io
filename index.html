@@ -80,6 +80,10 @@ h2.section{font-size:20px;margin:28px 0 4px;text-align:center}
 .demo svg{width:100%;height:auto;display:block;border-radius:24px;box-shadow:0 10px 24px rgba(0,0,0,.4)}
 .demo svg text{font-family:"Playpen Sans Arabic",system-ui,sans-serif}
 .demo figcaption{font-size:13px;color:var(--text);margin-top:8px;line-height:1.6}
+.alt{margin-top:12px;background:var(--card2);border:1px dashed rgba(255,255,255,.18)}
+.alt summary{font-size:15px;color:var(--gold)}
+.alt .how{background:rgba(0,0,0,.2)}
+.alt-go{background:#334155;font-size:15px;padding:12px;margin-bottom:14px}
 .illus{font-size:12px;color:var(--mute);text-align:center;margin:0 0 12px}
 .s1{--accent:#8B5CF6}
 .s2{--accent:#3B82F6}
@@ -148,7 +152,8 @@ footer a{color:var(--mute)}
     <ol class="how">
       <li>اضغط الزر في الأسفل <span class="btn-ar">(انضم إلى المجموعة)</span> — تفتح صفحة «Mimi Testers».</li>
       <li>إن ظهر <span class="btn-en">Sign in</span> سجّل الدخول بحساب Gmail الذي على هاتفك.</li>
-      <li>اضغط <span class="btn-en">Join group</span> (انضمام إلى المجموعة)، ثم أكّد.</li>
+      <li><b>بعد تسجيل الدخول ارجع إلى هذه الصفحة واضغط الزر مرة أخرى</b> — Google قد تأخذك إلى صفحة «My groups» (مجموعاتي) بدل المجموعة.</li>
+      <li>اضغط <span class="btn-en">Join group</span> (الانضمام إلى المجموعة)، ثم أكّد.</li>
     </ol>
     <!--guide:1-->
     <div class="demo">
@@ -173,6 +178,14 @@ footer a{color:var(--mute)}
     </div>
     <!--/guide:1-->
     <a class="go" data-step="1" href="https://groups.google.com/g/mimimimi-testers" target="_blank" rel="noopener">انضم إلى المجموعة <span class="arrow">←</span></a>
+    <details class="alt"><summary>لم يظهر لك زر الانضمام؟ طريقة بديلة بالإيميل</summary>
+      <ol class="how">
+        <li>اضغط الزر <span class="btn-ar">(أرسل إيميل الانضمام)</span> — يفتح تطبيق Gmail برسالة جاهزة.</li>
+        <li>أرسلها كما هي (لا تحتاج أن تكتب شيئاً) من حساب Gmail الذي على هاتفك.</li>
+        <li>تصلك رسالة من Google Groups خلال دقيقة: اضغط فيها <span class="btn-en">Join</span> أو ردّ عليها، فتصبح عضواً.</li>
+      </ol>
+      <a class="go alt-go" href="mailto:mimimimi-testers+subscribe@googlegroups.com?subject=join&amp;body=join">أرسل إيميل الانضمام <span class="arrow">←</span></a>
+    </details>
   </article>
 
   <article class="step s2" id="step2">
