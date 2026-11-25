@@ -74,6 +74,13 @@ h2.section{font-size:20px;margin:28px 0 4px;text-align:center}
 .go:active{transform:translateY(1px)}
 .go .arrow{font-size:20px;line-height:1}
 .note{font-size:13px;color:var(--mute);margin:10px 2px 0}
+/* رسوم «أين تضغط» (tools/make-tester-guide.py) */
+.demo{display:flex;gap:10px;justify-content:center;margin:2px 0 6px}
+.demo figure{margin:0;flex:0 1 158px;text-align:center}
+.demo svg{width:100%;height:auto;display:block;border-radius:24px;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+.demo svg text{font-family:"Playpen Sans Arabic",system-ui,sans-serif}
+.demo figcaption{font-size:13px;color:var(--text);margin-top:8px;line-height:1.6}
+.illus{font-size:12px;color:var(--mute);text-align:center;margin:0 0 12px}
 .s1{--accent:#8B5CF6}
 .s2{--accent:#3B82F6}
 .s3{--accent:#16A34A}
@@ -133,6 +140,7 @@ footer a{color:var(--mute)}
 
   <h2 class="section">الخطوات بالترتيب</h2>
   <p class="sub">بعد كل خطوة ارجع إلى هذه الصفحة وتابع التي بعدها</p>
+  <p class="illus">الرسوم تقريبية لتعرف أين تضغط — قد يختلف شكل الصفحة قليلاً حسب هاتفك ولغته.</p>
 
   <article class="step s1" id="step1">
     <div class="head"><div class="num">1</div><h3>انضم إلى مجموعة المختبِرين</h3></div>
@@ -142,6 +150,28 @@ footer a{color:var(--mute)}
       <li>إن ظهر <span class="btn-en">Sign in</span> سجّل الدخول بحساب Gmail الذي على هاتفك.</li>
       <li>اضغط <span class="btn-en">Join group</span> (انضمام إلى المجموعة)، ثم أكّد.</li>
     </ol>
+    <!--guide:1-->
+    <div class="demo">
+      <figure><svg viewBox="0 0 200 360" role="img" xmlns="http://www.w3.org/2000/svg" direction="ltr" style="direction:ltr">
+<defs><marker id="h" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#EF4444"/></marker></defs>
+<rect x="3" y="3" width="194" height="354" rx="26" fill="#fff" stroke="#2A2446" stroke-width="5"/>
+<rect x="70" y="10" width="60" height="6" rx="3" fill="#2A2446"/>
+<rect x="8" y="22" width="184" height="26" fill="#fff"/><circle cx="170" cy="34" r="3.2" fill="#4285F4"/><circle cx="163" cy="34" r="3.2" fill="#EA4335"/><circle cx="156" cy="34" r="3.2" fill="#FBBC05"/><circle cx="149" cy="34" r="3.2" fill="#34A853"/><text x="140" y="38" font-size="10" fill="#5f6368" font-weight="600" text-anchor="end">Groups</text><rect x="14" y="26" width="62" height="18" rx="9" fill="#1A73E8"/><text x="45" y="38.5" font-size="7.5" fill="#fff" font-weight="700" text-anchor="middle">تسجيل الدخول</text><line x1="8" y1="50" x2="192" y2="50" stroke="#e8eaed"/><text x="184" y="74" font-size="13" fill="#202124" font-weight="700" text-anchor="end">Mimi Testers</text><circle cx="100" cy="150" r="38" fill="#E6F4EA"/><circle cx="84" cy="144" r="9" fill="#F28B82"/><circle cx="104" cy="140" r="9" fill="#FDD663"/><circle cx="122" cy="146" r="9" fill="#81C995"/><rect x="74" y="154" width="56" height="18" rx="9" fill="#AECBFA"/><text x="100" y="214" font-size="9" fill="#5f6368" font-weight="400" text-anchor="middle">لا توجد محادثات بعد</text>
+<ellipse cx="45" cy="35" rx="38" ry="16" fill="none" stroke="#EF4444" stroke-width="3.5"/>
+<path d="M100,110 Q102.6,83.5 69,57" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round" marker-end="url(#h)"/>
+<circle cx="100" cy="110" r="4" fill="#EF4444"/>
+</svg><figcaption>إن ظهر «تسجيل الدخول» اضغطه وادخل بحساب Gmail</figcaption></figure>
+      <figure><svg viewBox="0 0 200 360" role="img" xmlns="http://www.w3.org/2000/svg" direction="ltr" style="direction:ltr">
+<defs><marker id="h" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#EF4444"/></marker></defs>
+<rect x="3" y="3" width="194" height="354" rx="26" fill="#fff" stroke="#2A2446" stroke-width="5"/>
+<rect x="70" y="10" width="60" height="6" rx="3" fill="#2A2446"/>
+<rect x="8" y="22" width="184" height="26" fill="#fff"/><circle cx="170" cy="34" r="3.2" fill="#4285F4"/><circle cx="163" cy="34" r="3.2" fill="#EA4335"/><circle cx="156" cy="34" r="3.2" fill="#FBBC05"/><circle cx="149" cy="34" r="3.2" fill="#34A853"/><text x="140" y="38" font-size="10" fill="#5f6368" font-weight="600" text-anchor="end">Groups</text><circle cx="24" cy="35" r="9" fill="#8AB4F8"/><line x1="8" y1="50" x2="192" y2="50" stroke="#e8eaed"/><text x="184" y="74" font-size="13" fill="#202124" font-weight="700" text-anchor="end">Mimi Testers</text><rect x="38" y="90" width="124" height="28" rx="14" fill="#1A73E8"/><text x="100" y="108" font-size="9" fill="#fff" font-weight="700" text-anchor="middle">الانضمام إلى المجموعة</text><circle cx="100" cy="180" r="38" fill="#E6F4EA"/><circle cx="84" cy="174" r="9" fill="#F28B82"/><circle cx="104" cy="170" r="9" fill="#FDD663"/><circle cx="122" cy="176" r="9" fill="#81C995"/><rect x="74" y="184" width="56" height="18" rx="9" fill="#AECBFA"/><text x="100" y="244" font-size="9" fill="#5f6368" font-weight="400" text-anchor="middle">لا توجد محادثات بعد</text>
+<ellipse cx="100" cy="104" rx="70" ry="21" fill="none" stroke="#EF4444" stroke-width="3.5"/>
+<path d="M150,290 Q163.9,210.5 142,131" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round" marker-end="url(#h)"/>
+<circle cx="150" cy="290" r="4" fill="#EF4444"/>
+</svg><figcaption>ثم اضغط «الانضمام إلى المجموعة» وأكّد</figcaption></figure>
+    </div>
+    <!--/guide:1-->
     <a class="go" data-step="1" href="https://groups.google.com/g/mimimimi-testers" target="_blank" rel="noopener">انضم إلى المجموعة <span class="arrow">←</span></a>
   </article>
 
@@ -153,6 +183,28 @@ footer a{color:var(--mute)}
       <li>اضغط <span class="btn-en">Become a tester</span> (أصبح مختبِراً).</li>
       <li>تظهر عبارة <span class="btn-en">You are now a tester</span> — تمّت الخطوة.</li>
     </ol>
+    <!--guide:2-->
+    <div class="demo">
+      <figure><svg viewBox="0 0 200 360" role="img" xmlns="http://www.w3.org/2000/svg" direction="ltr" style="direction:ltr">
+<defs><marker id="h" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#EF4444"/></marker></defs>
+<rect x="3" y="3" width="194" height="354" rx="26" fill="#fff" stroke="#2A2446" stroke-width="5"/>
+<rect x="70" y="10" width="60" height="6" rx="3" fill="#2A2446"/>
+<path d="M20,28 L20,44 L33,36 z" fill="#01875F"/><text x="38" y="40" font-size="10" fill="#5f6368" font-weight="600" text-anchor="start">Google Play</text><line x1="8" y1="52" x2="192" y2="52" stroke="#e8eaed"/><image href="img/icon.webp" x="132" y="66" width="46" height="46" preserveAspectRatio="xMidYMid slice"/><text x="124" y="86" font-size="12" fill="#202124" font-weight="700" text-anchor="end">قرية الدراسة</text><rect x="60" y="96" width="64" height="5" rx="2.5" fill="#e8eaed"/><text x="100" y="138" font-size="10.5" fill="#202124" font-weight="700" text-anchor="middle">انضم إلى برنامج الاختبار</text><rect x="30" y="150" width="140" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="161" width="112" height="5" rx="2.5" fill="#e8eaed"/><rect x="30" y="172" width="140" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="183" width="112" height="5" rx="2.5" fill="#e8eaed"/><rect x="44" y="208" width="112" height="28" rx="8" fill="#01875F"/><text x="100" y="226" font-size="10" fill="#fff" font-weight="700" text-anchor="middle">أصبح مختبِرًا</text>
+<ellipse cx="100" cy="222" rx="66" ry="22" fill="none" stroke="#EF4444" stroke-width="3.5"/>
+<path d="M60,310 Q42.2,280.0 60,250" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round" marker-end="url(#h)"/>
+<circle cx="60" cy="310" r="4" fill="#EF4444"/>
+</svg><figcaption>اضغط «أصبح مختبِرًا»</figcaption></figure>
+      <figure><svg viewBox="0 0 200 360" role="img" xmlns="http://www.w3.org/2000/svg" direction="ltr" style="direction:ltr">
+<defs><marker id="h" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#EF4444"/></marker></defs>
+<rect x="3" y="3" width="194" height="354" rx="26" fill="#fff" stroke="#2A2446" stroke-width="5"/>
+<rect x="70" y="10" width="60" height="6" rx="3" fill="#2A2446"/>
+<path d="M20,28 L20,44 L33,36 z" fill="#01875F"/><text x="38" y="40" font-size="10" fill="#5f6368" font-weight="600" text-anchor="start">Google Play</text><line x1="8" y1="52" x2="192" y2="52" stroke="#e8eaed"/><image href="img/icon.webp" x="132" y="66" width="46" height="46" preserveAspectRatio="xMidYMid slice"/><text x="124" y="86" font-size="12" fill="#202124" font-weight="700" text-anchor="end">قرية الدراسة</text><rect x="60" y="96" width="64" height="5" rx="2.5" fill="#e8eaed"/><circle cx="100" cy="160" r="26" fill="#E6F4EA"/><path d="M88,160 l8,8 l16,-17" fill="none" stroke="#01875F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><text x="100" y="208" font-size="12" fill="#202124" font-weight="700" text-anchor="middle">أنت الآن مختبِر</text><text x="100" y="228" font-size="8.5" fill="#5f6368" font-weight="400" text-anchor="middle">You are now a tester</text>
+<ellipse cx="100" cy="212" rx="62" ry="16" fill="none" stroke="#EF4444" stroke-width="3.5"/>
+<path d="M40,290 Q33.3,262.0 63,234" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round" marker-end="url(#h)"/>
+<circle cx="40" cy="290" r="4" fill="#EF4444"/>
+</svg><figcaption>تظهر «أنت الآن مختبِر» — تمّت</figcaption></figure>
+    </div>
+    <!--/guide:2-->
     <a class="go" data-step="2" href="https://play.google.com/apps/testing/com.mimistudy.app" target="_blank" rel="noopener">صِر مختبِراً <span class="arrow">←</span></a>
     <p class="note">إن قالت الصفحة إنك لست مسموحاً لك: تأكد أنك أكملت الخطوة 1 بنفس الحساب.</p>
   </article>
@@ -164,7 +216,21 @@ footer a{color:var(--mute)}
       <li>اضغط الزر في الأسفل <span class="btn-ar">(نزّل من Google Play)</span>.</li>
       <li>اضغط <span class="btn-en">Install</span> (تثبيت)، ثم افتح التطبيق.</li>
     </ol>
+    <!--guide:3-->
+    <div class="demo">
+      <figure><svg viewBox="0 0 200 360" role="img" xmlns="http://www.w3.org/2000/svg" direction="ltr" style="direction:ltr">
+<defs><marker id="h" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#EF4444"/></marker></defs>
+<rect x="3" y="3" width="194" height="354" rx="26" fill="#fff" stroke="#2A2446" stroke-width="5"/>
+<rect x="70" y="10" width="60" height="6" rx="3" fill="#2A2446"/>
+<path d="M20,28 L20,44 L33,36 z" fill="#01875F"/><text x="38" y="40" font-size="10" fill="#5f6368" font-weight="600" text-anchor="start">Google Play</text><line x1="8" y1="52" x2="192" y2="52" stroke="#e8eaed"/><image href="img/icon.webp" x="132" y="66" width="46" height="46" preserveAspectRatio="xMidYMid slice"/><text x="124" y="86" font-size="12" fill="#202124" font-weight="700" text-anchor="end">قرية الدراسة</text><rect x="60" y="96" width="64" height="5" rx="2.5" fill="#e8eaed"/><rect x="20" y="128" width="160" height="30" rx="8" fill="#01875F"/><text x="100" y="147" font-size="11" fill="#fff" font-weight="700" text-anchor="middle">تثبيت</text><image href="img/home.webp" x="20" y="176" width="48" height="104" preserveAspectRatio="xMidYMid slice"/><image href="img/library.webp" x="76" y="176" width="48" height="104" preserveAspectRatio="xMidYMid slice"/><image href="img/village.webp" x="132" y="176" width="48" height="104" preserveAspectRatio="xMidYMid slice"/><text x="180" y="302" font-size="9.5" fill="#202124" font-weight="700" text-anchor="end">حول هذا التطبيق</text>
+<ellipse cx="100" cy="143" rx="88" ry="22" fill="none" stroke="#EF4444" stroke-width="3.5"/>
+<path d="M40,330 Q26.15,250.5 48,171" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round" marker-end="url(#h)"/>
+<circle cx="40" cy="330" r="4" fill="#EF4444"/>
+</svg><figcaption>اضغط «تثبيت» — أو «تحديث» إن كان عندك القديم</figcaption></figure>
+    </div>
+    <!--/guide:3-->
     <a class="go" data-step="3" href="https://play.google.com/store/apps/details?id=com.mimistudy.app" target="_blank" rel="noopener">نزّل من Google Play <span class="arrow">←</span></a>
+    <p class="note">قد يظهر في Google Play باسمه القديم <b>«أدرس مع ميمي»</b> — هو نفس التطبيق. وإن كان مثبَّتاً عندك من قبل فاضغط <b>«تحديث»</b> بدل «فتح».</p>
     <p class="note">إن ظهر «التطبيق غير متاح»: انتظر <span class="ltr">5–10</span> دقائق بعد الخطوة 2 ثم افتح الزر مرة أخرى.</p>
   </article>
 
